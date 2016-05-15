@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class Question3 {
     public static void main(String[] args) {
+        System.out.println("Please enter a string:");
         Scanner keyboard = new Scanner(System.in);
         String userInput =  keyboard.nextLine();
         String anotherInput = keyboard.nextLine();
