@@ -29,6 +29,11 @@ public class Question3 {
         int b = keyboard.nextInt();
         System.out.print("Please enter the third integer (c): ");
         int c = keyboard.nextInt();
-
+        if((a-b) == (b-c) || (a-c) == (c-b) || (b-c) == (c-a) || (b-a) == (a-c) || (c-b) == (b-a) || (c-a) == (a-b)) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
+        
     }
 }

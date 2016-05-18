@@ -29,8 +29,14 @@ public class Question6 {
         System.out.print("Please enter the third integer (c): ");
         int c = keyboard.nextInt();
         
-        if( ( ( (b - c) <= 1) && ((b-c) > = 0)) || (((c - b) <= 1) && ((c-b) >= 0 ))) {
-            System.out.println("suh bro");
+        if( ( ( (b - c) <= 1) && ((b-c) >= 0)) || (((c - b) <= 1) && ((c-b) >= 0 ))) {
+            if (((a - c) >= 2) || ((a - b) >= 2)) {
+                System.out.println(true);
+            } else {
+                System.out.println(false);
+            }
+        } else {
+            System.out.println(true);
         }
     }
 }
