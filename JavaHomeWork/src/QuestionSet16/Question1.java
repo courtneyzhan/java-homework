@@ -7,7 +7,7 @@ package QuestionSet16;
 import java.util.Scanner;
 import java.util.Arrays;
 /**
- *
+ *  :)
  * @author Administrator
  */
 public class Question1 {
