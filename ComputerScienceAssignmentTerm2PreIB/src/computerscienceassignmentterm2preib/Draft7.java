@@ -38,7 +38,7 @@ public class Draft7 {
                     + "In the left corner is a bean bag. It has a cute cat print!\n"
                     + "Next to it is a lamp.\n"
                     + "Next to you there is a book shelf.\n"
-                    + "The white walls are littered with many objects.\n "
+                    + "The white walls are littered with many objects.\n"
                     + "There is a broken clock next to a phone, both of which are under a set of curtains.\n"
                     + "Inbeded into the wall is a fire place. It is out\n"
                     + "There is also a picture hanging there\n"
@@ -132,9 +132,9 @@ public class Draft7 {
         examine.put("clock", "The clock it's self is strange. Despite being an anolog clock, it seems to display 24hr time.\nAnyway, it's broken, and the hands are forever stuck at " + hour + ":" + min + ". \nYou try to rewind the hands however upon flipping over the clock there is no dial to change the time.");
         //spade
         if (hasSpade == false) {
-            examine.put("plant", "Eh… Are you sure you want to touch that?\n It's definitely unhygienic.\nIf I was you, I wouldn't use my hands to do that.");
+            examine.put("plant", "Eh… Are you sure you want to touch that?\nIt's definitely unhygienic.\nIf I ((((were)))) you, I wouldn't use my hands to do that.");
         } else {
-            examine.put("plant", "Eh… you probably shouldn't touch that.\n Luckily you found a trusty spade!\nNow you can toil in dat soil as much as you want!");
+            examine.put("plant", "Eh… you probably shouldn't touch that.\nLuckily you found a trusty spade!\nNow you can toil in dat soil as much as you want!");
         }
 //NOT SIGNIFICANT OBJECTS
         //chair
@@ -421,7 +421,7 @@ public class Draft7 {
                     Runtime.getRuntime().exit(0); //exit the program
                 case "pull":
                     if (rest.equalsIgnoreCase("Batman is awesome")) {
-                        delayedPrint(speed, "Wow, way to be lazy and not complete the game.\n Well done I guess that you win... cheater.\n");
+                        delayedPrint(speed, "Wow, way to be lazy and not complete the game.\nWell done I guess that you win... cheater.\n");
                         // an ending needs to be put here... yep
                         break;
                     }
