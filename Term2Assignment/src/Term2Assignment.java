@@ -1,16 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+        import java.util.ArrayList;
+        import java.util.HashMap;
+        import java.util.Map;
+        import java.util.Scanner;
+        import java.util.Arrays;
+        import java.util.List;
+        import java.util.Random;
 
 public class Term2Assignment {
 
@@ -31,10 +26,10 @@ public class Term2Assignment {
                     + "In the left corner is a bean bag. It has a cute cat print!\n"
                     + "Next to the beanbag is a bright lamp.\n"
                     + "Immediately beside you there is a book shelf.\n"
-                    + "The white walls are littered with many objects;\n "
-                    + "There is a broken clock next to a phone, both of which are under a set of curtains.\n"
-                    + "Inbedded into the wall is a fire place. It is out\n"
-                    + "There is also a picture hanging there\n"
+                    + "The white walls are littered with many objects.\n"
+                    + "There is a broken clock next to a phone and a calender, all of which are under a set of curtains.\n"
+                    + "Embedded into the wall is a fire place. The fire is is out\n"
+                    + "There is also a picture hanging there.\n"
                     + "There is a plant hanging from the ceiling where the light should be.\n"
                     + "Behind you is a door. You know it's locked. Perhaps your key will fit...";
         } else {
@@ -42,9 +37,9 @@ public class Term2Assignment {
                     + "In the left corner is a bean bag. It has a cute cat print!\n"
                     + "Next to it is a lamp.\n"
                     + "Next to you there is a book shelf.\n"
-                    + "The white walls are littered with many objects.\n "
-                    + "There is a broken clock next to a phone, both of which are under a set of curtains.\n"
-                    + "Inbeded into the wall is a fire place. It is out\n"
+                    + "The white walls are littered with many objects.\n"
+                    + "There is a broken clock next to a phone and a calender, all of which are under a set of curtains.\n"
+                    + "Embedded into the wall is a fire place. It is out\n"
                     + "There is also a picture hanging there\n"
                     + "There is a plant hanging from the ceiling where the light should be.\n"
                     + "Behind you is a door. You know it's locked. Maybe a key will unlock it...";
@@ -84,11 +79,11 @@ public class Term2Assignment {
         examine.put("knick-knacks", "They seem like souvenirs and most of them are well worn. \n"
                 + "To the left of the group are a few, chipped shells painted in strange reds which still smell like the sea;\n"
                 + "To the right, there are small white rocks? It's impossible to tell what they really are.\n"
-                + "In the centre, there is a small wooden box. It's surface is splintered and aged.");
+                + "In the centre, there is a small wooden box. Its surface is splintered and aged.");
         examine.put("knick knacks", "They seem like souvenirs and most of them are well worn. \n"
                 + "To the left of the group are a few, chipped shells painted in strange reds which still smell like the sea;\n"
-                + "To the right, there are small white rocks? It's impossible to tell what they really are.\n"
-                + "In the centre, there is a small wooden box. It's surface is splintered and aged.");
+                + "To the right, there are small white rocks? Its impossible to tell what they really are.\n"
+                + "In the centre, there is a small wooden box. Its surface is splintered and aged.");
         examine.put("knickknacks", "They seem like souvenirs and most of them are well worn. \n"
                 + "To the left of the group are a few, chipped shells painted in strange reds which still smell like the sea;\n"
                 + "To the right, there are small white rocks? It's impossible to tell what they really are.\n"
@@ -136,9 +131,9 @@ public class Term2Assignment {
         examine.put("clock", "The clock itself is strange. Despite being an analog clock, it seems to display 24hr time.\nAnyway, it's broken, and the hands are forever stuck at " + hour + ":" + min + ". \nYou try to rewind the hands however upon flipping over the clock there is no dial to change the time.");
         //spade
         if (hasSpade == false) {
-            examine.put("plant", "Are you sure you want to touch that?\n It's definitely unhygienic.\nIf I was you, I wouldn't use my hands to do that.");
+            examine.put("plant", "Are you sure you want to touch that?\nIt's definitely unhygienic.\nIf I were you, I wouldn't use my hands to do that.");
         } else {
-            examine.put("plant", "You probably shouldn't touch that.\n Luckily you found a trusty spade!\nNow you can toil in dat soil as much as you want!");
+            examine.put("plant", "You probably shouldn't touch that.\nLuckily you found a trusty spade!\nNow you can toil in dat soil as much as you want!");
         }
         //chair
         if (hasSpade == false) { //keeps track of objects and actions possible
@@ -152,15 +147,15 @@ public class Term2Assignment {
         examine.put("pencil", "There are just standard 4B pencils. They are a bit blunt, but other than that, there is nothing special about them");
         examine.put("paper", "It's a standard pad of paper. Nothing much to see here");
         examine.put("pad of paper", "It's just a standard pad of paper. Nothing much to see here.");
-        examine.put("picture", "It's a picture of some random family at the park. They seem to be having a good time.\n There is nothing interesting to see here");
-        examine.put("lamp", "The lamp is on and is casting a green light on it's surroundings.\n It doesn't look like you can turn it of anywhere and on closer inspection, it doesn't seem to be plugged in.\n You decide that this is relatively normal so you move on.");
+        examine.put("picture", "It's a picture of some random family at the park. They seem to be having a good time.\nThere is nothing interesting to see here");
+        examine.put("lamp", "The lamp is on and is casting a green light on its surroundings.\nIt doesn't look like you can turn it off anywhere and on closer inspection, it doesn't seem to be plugged in.\nYou decide that this is relatively normal so you move on.");
         examine.put("phone", "Wow, talk about retro! The phone looks like it is out of a 1950's advertisement. You could try to 'call' someone on it.");
-        examine.put("folder", "Gotta love that classic manilla folder. So non-descript, so beautiful. There seems to some documents in it.");
-        examine.put("documents", "Stalker alert much! The folder just seems to be filled with random peoples personal information.\n Hey! there's one in there about you! There isn't much information though.\n It just says " + userName);
-        examine.put("curtains", "There dosn't seem to be any light coming through the curtains.\n However this is probably because they are pitch black and look rather thick\n You probably could 'open' them");
-        examine.put("carpet", "The carpet is an ugly red.\n there isn't much else to see here.");
-        examine.put("fire place", "This thing clearly hasn't been used for a while.\n What used to be logs are now just ashes.\n There is a chimney heading upwards and a manilla folder on the mantel.");
-        examine.put("chimney", "You can hear voices echoing down the chimney shaft. There seems to be light at the end of it.\n You could probably try to 'climb' the chimney...");
+        examine.put("folder", "Gotta love that classic manilla folder. So nondescript, so beautiful. There seems to some documents in it.");
+        examine.put("documents", "Stalker alert much! The folder just seems to be filled with random peoples personal information.\nHey! there's one in there about you! There isn't much information though.\nIt just says " + userName);
+        examine.put("curtains", "There doesn't seem to be any light coming through the curtains.\nHowever, this is probably because they are pitch black and look rather thick\nYou probably could 'open' them");
+        examine.put("carpet", "The carpet is an ugly red.\nThere isn't much else to see here.");
+        examine.put("fire place", "This thing clearly hasn't been used for a while.\nWhat used to be logs are now just ashes.\nThere is a chimney heading upwards and a manilla folder on the mantel.");
+        examine.put("chimney", "You can hear voices echoing down the chimney shaft. There seems to be light at the end of it.\nYou could probably try to 'climb' the chimney...");
 
         if (object == null) { //in the case where the user doesn't specify the object
             return "Please specify an object to examine.";
@@ -181,6 +176,8 @@ public class Term2Assignment {
         boolean woodenBoxOpened = false; //These flags in particular are used if the user has already opened a box (so if they have already opened there is no need to re-enter a code)
         boolean silverBoxOpened = false;
         boolean goldBoxOpened = false;
+        boolean silverBoxFound = false;
+        boolean woodenBoxFound = false;
 
         Random randomGenerator = new Random(); //random class is called
         int boxWithKey = randomGenerator.nextInt(3) + 1;
@@ -325,8 +322,10 @@ public class Term2Assignment {
                             delayedPrint(speed, "You decide it's not important so you leave it");
                         }
                         break;
+                    } else if (rest.equalsIgnoreCase("knick knacks") || rest.equalsIgnoreCase("knick-knacks")) {
+                        woodenBoxFound = true;
                     } else if (rest.equalsIgnoreCase("wooden box")) { //when the user searches for the wooden box
-                        if (!woodenBoxOpened) {
+                        if (!woodenBoxOpened && woodenBoxFound) {
                             delayedPrint(speed, examineObject("wooden box", hasKey, hasCatFood, hasSpade, boxWithKey, userName, hour, min));
                             System.out.print("> ");
                             String startPuzzle = keyboard.nextLine();
@@ -359,16 +358,21 @@ public class Term2Assignment {
                                         }
                                     }
                                 }
-                            } else {
+                            } else if (woodenBoxOpened && woodenBoxFound) {
                                 delayedPrint(speed, "Clearly you are not that interested in this box. You decide to come back to it later."); //leaves the box as is for now
+                                break;
+                            } else if (woodenBoxOpened && woodenBoxFound) {
+                                delayedPrint(speed, "I don't know what you are talking about");
                                 break;
                             }
                         } else {// this is if the flag woodenBoxOpened it true which would mean that there isn' anything there anymore
                             delayedPrint(speed, "You have already opened this box and there is nothing interesting about it anymore...");
                         }
                         break;
+                    } else if (rest.equalsIgnoreCase("to kill a mockingbirs]d")) {
+                        silverBoxFound = true;
                     } else if (rest.equalsIgnoreCase("silver box")) {// this is basically the same as the wooden box
-                        if (silverBoxOpened == false) {
+                        if (!silverBoxOpened && silverBoxFound) {
                             delayedPrint(speed, examineObject("silver box", hasKey, hasCatFood, hasSpade, boxWithKey, userName, hour, min));
                             System.out.print("> ");
                             String enterCode = keyboard.nextLine();
@@ -406,10 +410,13 @@ public class Term2Assignment {
                                 delayedPrint(speed, "Clearly you are not that interested in this box. You decide to come back to it later.");
                                 break;
                             }
-                        } else {
+                        } else if (silverBoxOpened && silverBoxFound) {
                             delayedPrint(speed, "You have already opened this box and there is nothing interesting about it anymore...");
+                            break;
+                        } else {
+                            delayedPrint(speed, "I don't know what you are talking about");
+
                         }
-                        break;
                     } else if (rest.equalsIgnoreCase("gold box") && boxWithKey == 3) {// majority of the code for the gold box is the hash map as it doesn't have a puzzle to solve.
                         if (goldBoxOpened == false) {
                             hasKey = true;
@@ -434,21 +441,22 @@ public class Term2Assignment {
 
                     }
                     break;
+
                 case "quit":
                     Runtime.getRuntime().exit(0); //exit the program
 
                     // These are just other actions which can be done with insignificant object
                 case "pull":
-                    if (rest.equalsIgnoreCase("Batman is awesome")) {
+                    if (rest.equalsIgnoreCase("Batman is awesome")) { //another way to exit
                         delayedPrint(speed, "Being lazy and taking the secret passage way appears to work...\n");
                         delayedPrint(speed, "You pull the book off the shelf...A secret passage opens...Do you want to go inside the secret passage? (Y/N)");
                         String goIntoSecretPassage = keyboard.nextLine();
-                        if (goIntoSecretPassage.equalsIgnoreCase("Y")) {
+                        if (goIntoSecretPassage.equalsIgnoreCase("Y")) { //confirms that wants to exit
                             System.out.println("You continue along this path...But soon you begin feeling dizzy and the darkness and it's inhabitants begin to frighten you...\nDo you still wish to continue along this path? (Y/N)");
                             String continueSecretPassage = keyboard.nextLine();
-                            if (continueSecretPassage.equalsIgnoreCase("Y")) {
+                            if (continueSecretPassage.equalsIgnoreCase("Y")) { //another confirmation
                                 System.out.println("Soon the exit is visible. You exit.");
-                                Runtime.getRuntime().exit(0);
+                                Runtime.getRuntime().exit(0); //exits game
                             } else {
                                 System.out.println("You turn back to the comfort of the confined room.");
                             }
@@ -459,7 +467,9 @@ public class Term2Assignment {
                     }
                     break;
                 case "climb":
-                    if (rest.equalsIgnoreCase("chimney")) {
+                    if (rest == null) {//when object is not specified
+                        delayedPrint(speed, "Please specify what you want to climb.");
+                    } else if (rest.equalsIgnoreCase("chimney")) {
                         delayedPrint(speed, "You try to climb the chimney.\n");
                         delayedPrint(speed, ".");
                         delayedPrint(speed, ".");
@@ -469,7 +479,7 @@ public class Term2Assignment {
                     }
                     break;
                 case "call":
-                    if (rest == null) {
+                    if (rest == null) {//when object is not specified
                         delayedPrint(speed, "Please specify someone to call");
                     } else {
                         delayedPrint(speed, "You try to call your " + rest + ".\n");
@@ -481,7 +491,9 @@ public class Term2Assignment {
                     }
                     break;
                 case "open":
-                    if (rest.equalsIgnoreCase("curtains")) {
+                    if (rest == null) { //when object is not specified
+                        delayedPrint(speed, "Please specify what you want to open.");
+                    } else if (rest.equalsIgnoreCase("curtains")) {
                         System.out.println("You try to open the curtains.\n");
                         delayedPrint(speed, ".");
                         delayedPrint(speed, ".");
@@ -491,12 +503,11 @@ public class Term2Assignment {
                         break;
                     }
                     break;
-                default:
+                default: //when a command not registered is entered
                     System.out.println("I don't understand that command. Try again.");
                     break;
             } //switch case ends
         } //while loop ends
         //System.out.println(roomDescription(hasKey));
     } //main method ends
-
 } //class ends
